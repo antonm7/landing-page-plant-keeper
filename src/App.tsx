@@ -1,6 +1,14 @@
+import GreenBar from "./components/GreenBar";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar/Index";
+
 function App() {
  return (
-  <div className="bg-red-900 text-red-200">Welc</div>
+    <>
+        <Navbar />
+        <Header />
+        <GreenBar />
+    </>
  )
 }
 

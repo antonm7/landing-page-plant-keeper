@@ -5,7 +5,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    fontFamily: {
+      main:['Overlock', 'cursive'],
+      secondary:['Amaranth', 'sans-serif']
+    },
+    extend: {
+      colors: {
+        'greenBg':'#EBEFDE',
+        'grayText':'#5C6259',
+        'mainGreen':'#63D782'
+      }
+    },
   },
   plugins: [],
 }

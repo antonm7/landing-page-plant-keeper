@@ -1,0 +1,48 @@
+#images_wrapper {
+    height: 41rem;
+    img {
+        position: absolute;
+    }
+    #phone {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 4rem;
+        z-index: 2;
+
+    }
+    #tabs {
+        left: 50%;
+        transform: translateX(-114%);
+        z-index: 1;
+        top: 17.6rem;
+        z-index: 3;
+        
+    }
+    #one {
+        left: 50%;
+        transform: translateX(-174%);
+        z-index: 1;
+        top: 9rem;
+
+    }
+    #two {
+        left: 50%;
+        transform: translateX(22%);
+        z-index: 1;
+        top: 2rem;
+
+    }
+    #rightStar {
+        left: 50%;
+        transform: translateX(140%);
+        z-index: 1;
+        top: 12rem;
+    }
+    #leftStar {
+        left: 50%;
+        transform: translateX(-215%);
+        z-index: 1;
+        top: -5rem;
+    }
+}
+
