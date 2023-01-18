@@ -3,11 +3,13 @@
 #container {
     margin: 0 auto;
     max-width: 474px;
+    padding-left: 5rem;
     h2 {
         line-height: 5.5rem;
     }
     @include for-size(tablet-landscape) {
         margin: 0;
+        padding-left: 0rem;
     }
 }
 
@@ -22,7 +24,7 @@
 }
 
 #phone {
-    left: 50%;
+    left: 53%;
     transform: translateX(-50%); 
 }
 

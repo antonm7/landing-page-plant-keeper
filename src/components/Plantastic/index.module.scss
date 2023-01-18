@@ -1,0 +1,62 @@
+@import '../../index.scss';
+
+#container {
+    @include for-size(mid-desktop) {
+        padding-right: 4rem;
+        #green_wrapper {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+    }
+    @include for-size(tablet-landscape) {
+        max-width: 650px;
+        height: auto;
+        br {
+            display: none;
+        }
+    }
+    
+}
+
+#green_wrapper {
+    @include for-size(mid-desktop) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        p {
+            max-width: 570px;
+        }   
+    } 
+    @include for-size(tablet-portrait) {
+        flex-direction: column-reverse;
+    }
+    @include for-size(phone-only) {
+        h1 {
+            font-size: 50px;
+            line-height: 3.4rem;
+        }
+        #images_wrapper {
+            flex-wrap: wrap;
+            img {
+                &:nth-child(1) {
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+
+#plant_img_wrapper {
+    @include for-size(tablet-landscape) {
+        #plant_img {
+            min-height: 420px !important;
+            min-width: 220px;
+        }
+    }
+    @include for-size(tablet-portrait) {
+        #plant_img {
+            float: right;
+        }        
+    }
+   
+}
+
