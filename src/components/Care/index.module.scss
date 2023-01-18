@@ -1,0 +1,24 @@
+#container {
+    margin: 0 auto;
+    max-width: 474px;
+    h2 {
+        line-height: 5.5rem;
+    }
+}
+
+#box {
+    left: 50%;
+    transform: translateX(8%); 
+    bottom:6.5rem ;
+}
+
+#phone {
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+#flower {
+    top: 13rem;
+    left: 50%;
+    transform: translateX(-270%); 
+}

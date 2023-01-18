@@ -5,6 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -14,3 +18,4 @@
   padding-left: 5rem;
   padding-right: 5rem;
 }
+

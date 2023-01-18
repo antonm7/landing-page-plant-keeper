@@ -1,0 +1,21 @@
+#box {
+    left: 50%;
+    transform: translateX(-140%); 
+    bottom:3rem ;
+}
+
+#phone {
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+#calendar {
+    left: 50%;
+    transform: translateX(150%); 
+    top: 15rem;
+}
+
+#container {
+    margin: 0 auto;
+    max-width: 474px;
+}
