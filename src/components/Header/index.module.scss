@@ -1,19 +1,27 @@
+@import '../../index.scss';
+
 #images_wrapper {
     height: 41rem;
+    @include for-size(phone-only) {
+        transform: scale(0.7);
+        height: 33.5rem;
+        margin-top: -6rem;
+    }
     img {
         position: absolute;
+        @include for-size(phone-only) {
+            max-width: unset;
+        }
     }
     #phone {
         left: 50%;
         transform: translateX(-50%);
         top: 4rem;
         z-index: 2;
-
     }
     #tabs {
         left: 50%;
         transform: translateX(-114%);
-        // top: 17.6rem;
         z-index: 3;
         
     }
@@ -29,19 +37,28 @@
         transform: translateX(22%);
         z-index: 1;
         top: 2rem;
-
     }
     #rightStar {
         left: 50%;
         transform: translateX(140%);
         z-index: 1;
         top: 12rem;
+        @include for-size(tablet-portrait) {
+            transform: scale(0.7);
+            transform: translateX(120%);
+        }
     }
     #leftStar {
         left: 50%;
         transform: translateX(-215%);
         z-index: 1;
         top: -5rem;
+        @include for-size(tablet-portrait) {
+            transform: scale(0.7);
+            transform: translateX(-180%);
+        }
     }
 }
+
+
 

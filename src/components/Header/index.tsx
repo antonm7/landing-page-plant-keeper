@@ -46,7 +46,7 @@ export default function Header() {
     
     return (
         <div className="text-center pt-16">
-            <h1 className="font-main font-black text-black text-7xl ">Keep your plants alive</h1>
+            <h1 className="font-main font-black text-black text-7xl px-8">Keep your plants alive</h1>
             <p className=" font-secondary text-grayText font-normal text-base max-w-[23rem] m-auto pt-4">Individual care schedule and reminders for your plants, recommendations, step by step guides, identification, light meter and more.</p>
             <div className="relative" id={styles.images_wrapper}>
                 <img src={phone} id={styles.phone}/>

@@ -1,0 +1,28 @@
+@import '../../index.scss';
+
+    #wrapper {
+        @include for-size(tablet-landscape) {
+            padding-top: 1.75rem;
+        }
+    }
+
+    #links {
+        @include for-size(tablet-landscape) {
+            display: none;
+        }
+    }
+
+    #menu {
+        @include for-size(tablet-landscape) {
+            display: block;
+        }
+        
+    }
+
+    #images_wrapper {
+        @include for-size(tablet-landscape) {
+            display: none;
+        }
+    }
+
+    
