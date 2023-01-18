@@ -1,5 +1,17 @@
+@import '../../index.scss';
+
 #wrapper {
     position: relative;
     z-index: 2;
+    @include for-size(tablet-portrait) {
+        flex-wrap: wrap;
+    }
+    div {
+        @include for-size(tablet-portrait) {
+            padding-top: 1rem;
+        }
+    }
 }
+
+
 

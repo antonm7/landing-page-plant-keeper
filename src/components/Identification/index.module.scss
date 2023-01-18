@@ -1,14 +1,50 @@
+@import '../../index.scss';
+
 #box {
     left: 50%;
     bottom:-2rem ;
+    @include for-size(tablet-landscape) {
+        top: 30rem;
+    }
 }
 
 #phone {
     left: 50%;
     transform: translateX(-50%); 
+    @include for-size(tablet-landscape) {
+        padding-top: 5rem;
+    }
 }
 
 #container {
     margin: 0 auto;
     max-width: 474px;
+    @include for-size(tablet-landscape) {
+        margin: 0;
+    }
+}
+
+#wrapper {
+    @include for-size(tablet-landscape) {
+        min-height: unset;
+        height: 170vh;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 10rem;
+        #container_wrapper, #images_wrapper {
+            width: 100%;
+            padding-top: 0 !important;
+        }
+    }
+    @include for-size(tablet-portrait) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    @include for-size (phone-only) {
+        h2 {
+            font-size: 45px;
+        }
+    }
 }

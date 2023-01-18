@@ -1,8 +1,13 @@
+@import '../../index.scss';
+
 #container {
     margin: 0 auto;
     max-width: 474px;
     h2 {
         line-height: 5.5rem;
+    }
+    @include for-size(tablet-landscape) {
+        margin: 0;
     }
 }
 
@@ -10,6 +15,10 @@
     left: 50%;
     transform: translateX(8%); 
     bottom:6.5rem ;
+    @include for-size(tablet-landscape) {
+        top: 30.5rem;
+        left: 50%;
+    }
 }
 
 #phone {
@@ -22,3 +31,37 @@
     left: 50%;
     transform: translateX(-270%); 
 }
+
+#wrapper {
+    @include for-size(tablet-landscape) {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        height: 170vh;
+    }
+    @include for-size(tablet-portrait) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    @include for-size (phone-only) {
+        h2 {
+            font-size: 45px;
+        }
+    }
+}
+
+#container_wrapper {
+    @include for-size(tablet-landscape) {
+        padding-top: 10rem;
+        width: 100%;
+    }
+}
+
+#images_wrapper {
+    width: 100%;
+}
+
+
+

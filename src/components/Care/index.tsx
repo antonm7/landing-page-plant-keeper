@@ -6,8 +6,8 @@ import StyledButton from '../Common/StyledButton'
 
 export default function Care() {
     return (
-        <div className='min-h-[960px] flex bg-[#F8F8F8]'>
-            <div className='w-2/4 pt-60' id={styles.container}>
+        <div className='min-h-[960px] flex bg-[#F8F8F8]' id={styles.wrapper}>
+            <div className='w-2/4 pt-60' id={styles.container_wrapper}>
                 <div id={styles.container}>
                     <h4 className='text-xl text-grayText font-bold font-secondary'>Light meter</h4>
                     <h2 className='pt-4 font-black text-7xl text-black font-main'>Taking proper care of plants</h2>
@@ -15,7 +15,7 @@ export default function Care() {
                     <StyledButton title="Get the app"/>            
                 </div>
             </div>
-            <div className='w-2/4 relative pt-32'>
+            <div className='w-2/4 relative pt-32' id={styles.images_wrapper}>
                 <img src={box}  className=" absolute z-20 scale-100" id={styles.box}/>
                 <img src={phone} className="absolute z-10 scale-100" id={styles.phone}/>
                 <img src={flower} className="absolute z-10 scale-100" id={styles.flower}/>

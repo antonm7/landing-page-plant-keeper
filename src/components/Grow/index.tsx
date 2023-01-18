@@ -32,13 +32,13 @@ export default function Grow() {
     // },[])
 
     return (
-        <div className='min-h-[1000px] flex' ref={wrapper}>
-            <div className='w-2/4 relative pt-44'>
+        <div className='min-h-[1000px] flex' ref={wrapper} id={styles.wrapper}>
+            <div className='w-2/4 relative pt-44' id={styles.images_wrapper}>
                 <img src={box} ref={boxRef} className=" absolute z-20 scale-100" id={styles.box}/>
                 <img src={phone} className="absolute z-10 scale-100" id={styles.phone}/>
                 <img src={calendar} className="absolute z-10 scale-100" id={styles.calendar}/>
             </div>
-            <div className='w-2/4 pt-72 '>
+            <div className='w-2/4 pt-72 ' id={styles.container_wrapper}>
                 <div id={styles.container}>
                     <h4 className='text-xl text-grayText font-bold font-secondary'>Gardening schedule</h4>
                     <h2 className='pt-4 font-black text-7xl text-black font-main'>Grow organic edible plants</h2>

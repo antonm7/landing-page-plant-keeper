@@ -16,7 +16,7 @@ function App() {
         <Identification />
         <Care />
         <Grow />
-        <Users />
+        {/* <Users /> */}
         <Plantastic />
     </>
  )

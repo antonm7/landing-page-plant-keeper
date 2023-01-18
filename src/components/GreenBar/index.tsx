@@ -27,7 +27,6 @@ export default function GreenBar() {
                 <h3 className='font-main text-5xl font-black py-2'>950k+</h3>
                 <p className='font-secondary text-lg text-grayText'>saved plants</p>
             </div>
-
         </div>
     )
 }
