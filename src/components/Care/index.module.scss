@@ -21,11 +21,19 @@
         top: 30.5rem;
         left: 50%;
     }
+    @include for-size (phone-only) {
+        scale: 0.7 !important;
+        top: 45rem;
+        transform: translateX(0%) !important; 
+    }
 }
 
 #phone {
     left: 52%;
     transform: translateX(-50%); 
+    @include for-size (phone-only) {
+        max-width: unset;
+    }
 }
 
 #flower {
@@ -52,9 +60,7 @@
             font-size: 45px;
             line-height: 3.4rem;
         }
-    }
-    @include for-size(phone-only) {
-        height: 170vh;
+        height: 190vh;
     }
 }
 

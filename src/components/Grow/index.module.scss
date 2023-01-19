@@ -7,6 +7,11 @@
     @include for-size(tablet-landscape) {
         top: 35.2rem;
     }
+    @include for-size (phone-only) {
+        scale: 0.7 !important;
+        top: 40rem;
+        transform: translateX(-170%) !important; 
+    }
 }
 
 #phone {
@@ -14,6 +19,9 @@
     transform: translateX(-50%); 
     @include for-size(tablet-landscape) {
         padding-top: 5rem;
+    }
+    @include for-size (phone-only) {
+        max-width: unset;
     }
 }
 
@@ -54,9 +62,7 @@
             line-height: 3.4rem;    
             font-size: 45px;
         }
-    }
-    @include for-size(phone-only) {
-        height: 140vh;
+        height: 170vh !important;
     }
 }
 

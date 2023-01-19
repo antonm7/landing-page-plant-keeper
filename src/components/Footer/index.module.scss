@@ -1,3 +1,42 @@
+@import '../../index.scss';
+
+#container {
+    @include for-size(tablet-portrait) {
+        flex-direction: column;
+        .small {
+            padding-top: 3rem;
+        }
+        #logo_wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+        }
+    }
+}
+#half {
+    @include for-size(tablet-landscape) {
+        display: none;
+    }
+}
+
+#logo_container {
+    @include for-size(phone-only) {
+        width: 150px;
+    }
+}
+
+#footer_line {
+    flex-wrap: nowrap;
+    @include for-size(tablet-landscape) {
+        h3 {
+            padding-right: 2rem;
+            padding-top: 1rem;
+        }
+        // padding-left: 2rem;
+        flex-wrap: wrap;
+    }
+}
+
 #logo {
     filter: brightness(0) invert(1);
 }

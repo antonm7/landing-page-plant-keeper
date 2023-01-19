@@ -7,10 +7,16 @@
 }
 
 #box {
-    left: 50%;
+    left: 58%;
     bottom:-2rem ;
+    transform: translateX(0%); 
     @include for-size(tablet-landscape) {
         top: 30rem;
+    }
+    @include for-size (phone-only) {
+        scale: 0.7 !important;
+        top: 30rem;
+        transform: translateX(-140%) !important; 
     }
 }
 
@@ -19,6 +25,9 @@
     transform: translateX(-50%); 
     @include for-size(tablet-landscape) {
         padding-top: 5rem;
+    }
+    @include for-size (phone-only) {
+        max-width: unset;
     }
 }
 
@@ -49,7 +58,7 @@
         padding-right: 1rem;
     }
     @include for-size (phone-only) {
-        height: 140vh;
+        height: 170vh;
         h2 {
             font-size: 45px;
         }
