@@ -11,14 +11,14 @@ import Users from "./components/Users";
 function App() {
  return (
     <>
-        {/* <Navbar />
+        <Navbar />
         <Header />
         <GreenBar />
         <Identification />
         <Care />
         <Grow />
         <Users />
-        <Plantastic /> */}
+        <Plantastic />
         <Footer />
     </>
  )

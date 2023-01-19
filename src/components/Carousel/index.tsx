@@ -56,10 +56,10 @@ export default function Carousel() {
     return (
         <Slider {...settings} className={styles.slider}>
             <Comment img={one} title={'Best plant app for plant lovers!'} paragraph={"I love the watering reminders. Plant notification is thorough and extensive! Me and my plant bbs are very happy!!!!"} name={"Jenny Wilson"} stars={stars} />
-            <Comment img={one} title={'Best plant app for plant lovers!'} paragraph={"I love the watering reminders. Plant notification is thorough and extensive! Me and my plant bbs are very happy!!!!"} name={"Jenny Wilson"} stars={stars} />
-            <Comment img={one} title={'Best plant app for plant lovers!'} paragraph={"I love the watering reminders. Plant notification is thorough and extensive! Me and my plant bbs are very happy!!!!"} name={"Jenny Wilson"} stars={stars} />
-            <Comment img={one} title={'Best plant app for plant lovers!'} paragraph={"I love the watering reminders. Plant notification is thorough and extensive! Me and my plant bbs are very happy!!!!"} name={"Jenny Wilson"} stars={stars} />
-            <Comment img={one} title={'Best plant app for plant lovers!'} paragraph={"I love the watering reminders. Plant notification is thorough and extensive! Me and my plant bbs are very happy!!!!"} name={"Jenny Wilson"} stars={stars} />
+            <Comment img={two} title={'This is the ULTIMATE plant care app'} paragraph={"It's the ideal plant tracker, especially for new plant parents. It helps me by providing a basic plant care schedule for each..."} name={"Kristin Watson"} stars={stars} />
+            <Comment img={three} title={'Wow, this is cool and easy!'} paragraph={"I am a new gardener. I've been hoping to find an app like this where I can find all the details to care for specific plants."} name={"Savannah Nguyen"} stars={stars} />
+            <Comment img={four} title={'Totally amazing'} paragraph={'I have not used this app for long but my plants are looking much better and I am not stressing about when to water and feed them'} name={"Esther Howard"} stars={stars} />
+            <Comment img={five} title={'Really cute and helpful so far!!!'} paragraph={"I love the interface and the aesthetic of this app. It's so calming and easy to use, really makes me feel like a proper Plant Mom."} name={"Dianne Russell"} stars={stars} />
         </Slider>
     );
 }
