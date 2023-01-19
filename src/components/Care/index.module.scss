@@ -41,7 +41,7 @@
         justify-content: flex-start;
         padding-left: 5rem;
         padding-right: 5rem;
-        height: 170vh;
+        height: 180vh;
     }
     @include for-size(tablet-portrait) {
         padding-left: 1rem;
@@ -54,7 +54,7 @@
         }
     }
     @include for-size(phone-only) {
-        height: 140vh;
+        height: 170vh;
     }
 }
 

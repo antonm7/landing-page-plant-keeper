@@ -34,7 +34,7 @@
 #wrapper {
     @include for-size(tablet-landscape) {
         min-height: unset;
-        height: 170vh;
+        height: 180vh;
         flex-direction: column-reverse;
         justify-content: flex-end;
         padding-left: 5rem;

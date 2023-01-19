@@ -1,4 +1,5 @@
 import Care from "./components/Care";
+import Footer from "./components/Footer";
 import GreenBar from "./components/GreenBar";
 import Grow from "./components/Grow";
 import Header from "./components/Header";
@@ -18,6 +19,7 @@ function App() {
         <Grow />
         <Users />
         <Plantastic />
+        <Footer />
     </>
  )
 }
