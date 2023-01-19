@@ -10,21 +10,21 @@ export default function Identification() {
     const wrapper = useRef(null)
     const boxRef = useRef(null)
     
-    gsap.registerPlugin(ScrollTrigger)
-    useEffect(() => {
-        const tl = gsap.timeline({
-            scrollTrigger: {
-             trigger:wrapper.current,
-             start:"-=600",
-             end: "+=900",
-             scrub:true
-         }
-        })
-        tl.fromTo(boxRef.current,
-            {scale:0,translateX:'-104%'},
-            {scale:1,translateX:'-104%'}
-        )
-    },[])
+    // gsap.registerPlugin(ScrollTrigger)
+    // useEffect(() => {
+    //     const tl = gsap.timeline({
+    //         scrollTrigger: {
+    //          trigger:wrapper.current,
+    //          start:"-=600",
+    //          end: "+=900",
+    //          scrub:true
+    //      }
+    //     })
+    //     tl.fromTo(boxRef.current,
+    //         {scale:0,translateX:'-104%'},
+    //         {scale:1,translateX:'-104%'}
+    //     )
+    // },[])
 
     return (
         <div className='min-h-[1000px] flex' ref={wrapper} id={styles.wrapper}>

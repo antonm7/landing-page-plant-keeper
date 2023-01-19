@@ -58,7 +58,8 @@
         padding-right: 1rem;
     }
     @include for-size (phone-only) {
-        height: 170vh;
+        height: 80rem !important;
+        overflow-y: hidden;
         h2 {
             font-size: 45px;
         }
