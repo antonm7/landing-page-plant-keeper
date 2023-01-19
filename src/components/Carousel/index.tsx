@@ -18,11 +18,41 @@ const settings = {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-
+    responsive: [
+        {
+          breakpoint: 1400,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 900,
+          settings: {
+            slidesToShow: 1.7
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1.2
+          }
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1
+          }
+        }
+    ]
   };
 
 export default function Carousel() {
-    
     return (
         <Slider {...settings} className={styles.slider}>
             <Comment img={one} title={'Best plant app for plant lovers!'} paragraph={"I love the watering reminders. Plant notification is thorough and extensive! Me and my plant bbs are very happy!!!!"} name={"Jenny Wilson"} stars={stars} />

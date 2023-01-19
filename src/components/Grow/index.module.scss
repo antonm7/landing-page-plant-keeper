@@ -51,7 +51,17 @@
     }
     @include for-size (phone-only) {
         h2 {
+            line-height: 3.4rem;    
             font-size: 45px;
         }
+    }
+    @include for-size(phone-only) {
+        height: 140vh;
+    }
+}
+
+#images_wrapper {
+    @include for-size(phone-only) {
+        scale: 0.8;
     }
 }

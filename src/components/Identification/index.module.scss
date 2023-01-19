@@ -1,5 +1,11 @@
 @import '../../index.scss';
 
+#images_wrapper {
+    @include for-size(phone-only) {
+        scale: 0.8;
+    }
+}
+
 #box {
     left: 50%;
     bottom:-2rem ;
@@ -9,7 +15,7 @@
 }
 
 #phone {
-    left: 53%;
+    left: 59%;
     transform: translateX(-50%); 
     @include for-size(tablet-landscape) {
         padding-top: 5rem;
@@ -43,6 +49,7 @@
         padding-right: 1rem;
     }
     @include for-size (phone-only) {
+        height: 140vh;
         h2 {
             font-size: 45px;
         }

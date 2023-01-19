@@ -1,0 +1,10 @@
+@import '../../index.scss';
+
+#carousel_wrapper {
+    @include for-size(mid-desktop) {
+        padding-left: 20vw !important;
+    }
+    @include for-size(tablet-landscape) {
+        padding-left: 5vw !important;
+    }
+}

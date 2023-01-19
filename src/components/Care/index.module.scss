@@ -24,14 +24,14 @@
 }
 
 #phone {
-    left: 53%;
+    left: 52%;
     transform: translateX(-50%); 
 }
 
 #flower {
     top: 13rem;
     left: 50%;
-    transform: translateX(-270%); 
+    transform: translateX(-260%); 
 }
 
 #wrapper {
@@ -50,7 +50,11 @@
     @include for-size (phone-only) {
         h2 {
             font-size: 45px;
+            line-height: 3.4rem;
         }
+    }
+    @include for-size(phone-only) {
+        height: 140vh;
     }
 }
 
@@ -63,6 +67,9 @@
 
 #images_wrapper {
     width: 100%;
+    @include for-size(phone-only) {
+        scale: 0.8;
+    }
 }
 
 

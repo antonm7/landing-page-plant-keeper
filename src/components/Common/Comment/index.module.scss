@@ -1,0 +1,36 @@
+@import '../../../index.scss';
+
+#wrapper {
+    @include for-size(tablet-portrait) {
+        width: 360px;
+        min-height:15rem;
+        height: auto;
+        padding: 1rem;
+        h3 {
+            font-size: 1.1rem;
+            padding-top: 0.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            white-space: pre-wrap;
+            padding-right: 2rem;
+        }
+    }
+    @include for-size(phone-only) {
+        width: 300px;
+        min-height:15rem;
+        height: auto;
+        padding: 1rem;
+        h3 {
+            font-size: 1.1rem;
+            padding-top: 0.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.7rem;
+            white-space: pre-wrap;
+            padding-right: 2rem;
+        }
+    }
+}

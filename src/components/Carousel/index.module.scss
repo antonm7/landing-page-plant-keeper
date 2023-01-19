@@ -1,4 +1,15 @@
+@import '../../index.scss';
+
 .slider {
     width: 110vw;
     position: absolute;
+    @include for-size(mid-desktop) {
+        width: 90vw;
+    }
+    @include for-size(tablet-landscape) {
+        width: 110vw;
+    }
+    @include for-size(phone-only) {
+        width: 90vw;
+    }
 }
