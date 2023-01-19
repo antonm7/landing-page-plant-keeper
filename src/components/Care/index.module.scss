@@ -15,7 +15,7 @@
 
 #box {
     left: 50%;
-    transform: translateX(8%); 
+    transform: translateX(13%); 
     bottom:6.5rem ;
     @include for-size(tablet-landscape) {
         top: 30.5rem;
@@ -23,7 +23,7 @@
     }
     @include for-size (phone-only) {
         scale: 0.7 !important;
-        top: 45rem;
+        top: 28rem;
         transform: translateX(0%) !important; 
     }
 }
@@ -39,7 +39,7 @@
 #flower {
     top: 13rem;
     left: 50%;
-    transform: translateX(-260%); 
+    transform: translateX(-235%); 
 }
 
 #wrapper {

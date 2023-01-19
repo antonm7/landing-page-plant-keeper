@@ -4,6 +4,7 @@ import one from '/header/one.png'
 import two from '/header/two.png'
 import tabs from '/header/tabs.svg'
 import phone from '/header/phone.svg'
+import bottom from '/header/bottom.svg'
 import styles from './index.module.scss'
 import { useRef, useLayoutEffect } from 'react'
 import gsap from 'gsap'
@@ -12,6 +13,7 @@ export default function Header() {
     const leftFlower = useRef(null)
     const rightFlower = useRef(null); 
     const tabsRef = useRef(null); 
+    const phoneRef = useRef(null); 
 
     useLayoutEffect(() => {
         gsap.fromTo(leftFlower.current,{
@@ -42,14 +44,23 @@ export default function Header() {
             translateX:'-114%',
             duration:0.8
         })
+        gsap.fromTo(phoneRef.current,{
+            y:'6rem',
+            translateX:'-50%',
+         },{
+             y:'4rem',
+             translateX:'-50%',
+             duration:0.8
+         })
     }, []);
     
     return (
-        <div className="text-center pt-16">
+        <div className="text-center pt-16 overflow-hidden">
             <h1 className="font-main font-black text-black text-7xl px-8">Keep your plants alive</h1>
             <p className=" font-secondary text-grayText font-normal text-base max-w-[23rem] m-auto pt-4">Individual care schedule and reminders for your plants, recommendations, step by step guides, identification, light meter and more.</p>
             <div className="relative" id={styles.images_wrapper}>
-                <img src={phone} id={styles.phone}/>
+                <img src={bottom} id={styles.bottom}/>
+                <img src={phone} id={styles.phone} ref={phoneRef}/>
                 <img src={tabs} ref={tabsRef} id={styles.tabs} />
                 <img src={two} ref={rightFlower} id={styles.two}/>
                 <img src={one} ref={leftFlower} id={styles.one}/>

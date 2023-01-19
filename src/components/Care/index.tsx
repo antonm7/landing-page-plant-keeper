@@ -3,10 +3,18 @@ import phone from '/care/phone.svg'
 import box from '/care/box.svg'
 import styles from './index.module.scss'
 import StyledButton from '../Common/StyledButton'
+import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
 
 export default function Care() {
+    const boxRef = useRef(null)
+
+    useEffect(() => {
+        gsap.fromTo(boxRef.current,{scale:0,transform:'translateX(15%)'},{scale:1,transform:'translateX(15%)'})
+    },[])
+
     return (
-        <div className='min-h-[960px] flex bg-[#F8F8F8]' id={styles.wrapper}>
+        <div className='min-h-[960px] flex bg-[#F8F8F8] overflow-hidden' id={styles.wrapper}>
             <div className='w-2/4 pt-60' id={styles.container_wrapper}>
                 <div id={styles.container}>
                     <h4 className='text-xl text-grayText font-bold font-secondary'>Light meter</h4>
@@ -16,7 +24,7 @@ export default function Care() {
                 </div>
             </div>
             <div className='w-2/4 relative pt-32' id={styles.images_wrapper}>
-                <img src={box}  className=" absolute z-20 scale-100" id={styles.box}/>
+                <img src={box}  className=" absolute z-20" ref={boxRef} id={styles.box}/>
                 <img src={phone} className="absolute z-10 scale-100" id={styles.phone}/>
                 <img src={flower} className="absolute z-10 scale-100" id={styles.flower}/>
             </div>

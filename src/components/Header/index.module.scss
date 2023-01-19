@@ -16,7 +16,6 @@
     #phone {
         left: 50%;
         transform: translateX(-50%);
-        top: 4rem;
         z-index: 2;
     }
     #tabs {
@@ -37,6 +36,16 @@
         transform: translateX(22%);
         z-index: 1;
         top: 2rem;
+    }
+    #bottom {
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0rem;
+            z-index: 2;
+            @include for-size(phone-only) {
+                transform: translateX(-50%);
+                bottom: -8rem;
+            }
     }
     #rightStar {
         left: 50%;

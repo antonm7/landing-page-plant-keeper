@@ -12,14 +12,17 @@ function App() {
  return (
     <>
         <Navbar />
-        <Header />
+        {/* <Header /> */}
         <GreenBar />
         <Identification />
+        <Identification />
+        <Identification />
+        {/* <GreenBar />
         <Care />
         <Grow />
         <Users />
         <Plantastic />
-        <Footer />
+        <Footer />  */}
     </>
  )
 }

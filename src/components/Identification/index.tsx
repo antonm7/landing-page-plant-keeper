@@ -4,30 +4,28 @@ import styles from './index.module.scss'
 import StyledButton from '../Common/StyledButton'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
-import ScrollTrigger from 'gsap/ScrollTrigger'
 
 export default function Identification() {
     const wrapper = useRef(null)
     const boxRef = useRef(null)
-    
-    // gsap.registerPlugin(ScrollTrigger)
-    // useEffect(() => {
-    //     const tl = gsap.timeline({
-    //         scrollTrigger: {
-    //          trigger:wrapper.current,
-    //          start:"-=600",
-    //          end: "+=900",
-    //          scrub:true
-    //      }
-    //     })
-    //     tl.fromTo(boxRef.current,
-    //         {scale:0,translateX:'-104%'},
-    //         {scale:1,translateX:'-104%'}
-    //     )
-    // },[])
+
+    useEffect(() => {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger:wrapper.current,
+                start:"-=600",
+                end: "+=900",
+                scrub:true
+            }
+        })
+        tl.fromTo(boxRef.current,
+            {scale:0,translateX:'-104%'},
+            {scale:1,translateX:'-104%'}
+        )
+    },[])
 
     return (
-        <div className='min-h-[1000px] flex' ref={wrapper} id={styles.wrapper}>
+        <div className='min-h-[1000px] flex overflow-hidden' ref={wrapper} id={styles.wrapper}>
             <div className='w-2/4 relative pt-44' id={styles.images_wrapper}>
                 <img src={box} ref={boxRef} className=" absolute z-20 scale-100" id={styles.box}/>
                 <img src={phone} className="absolute z-10 scale-100" id={styles.phone}/>
