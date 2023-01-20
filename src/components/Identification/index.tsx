@@ -4,16 +4,18 @@ import styles from './index.module.scss'
 import StyledButton from '../Common/StyledButton'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
 
 export default function Identification() {
     const wrapper = useRef(null)
     const boxRef = useRef(null)
+    gsap.registerPlugin(ScrollTrigger)
 
     useEffect(() => {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger:wrapper.current,
-                start:"-=600",
+                start:"-=500",
                 end: "+=900",
                 scrub:true
             }

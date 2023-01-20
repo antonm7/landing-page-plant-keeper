@@ -11,25 +11,22 @@ import ScrollTrigger from 'gsap/ScrollTrigger'
 export default function Grow() {
     const wrapper = useRef(null)
     const boxRef = useRef(null)
-    const calendarRef = useRef(null)
-    
-    // gsap.registerPlugin(ScrollTrigger)
-    
-    // useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
 
-    //     const tl = gsap.timeline({
-    //         scrollTrigger: {
-    //          trigger:wrapper.current,
-    //          start:"-=600",
-    //          end: "+=900",
-    //          scrub:true
-    //      }
-    //     })
-    //     tl.fromTo(boxRef.current,
-    //         {scale:0,translateX:'-104%'},
-    //         {scale:1,translateX:'-104%'}
-    //     )
-    // },[])
+    useEffect(() => {
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger:wrapper.current,
+                start:"-=500",
+                end: "+=900",
+                scrub:true
+            }
+        })
+        tl.fromTo(boxRef.current,
+            {scale:0,transform:'translateX(-104%)'},
+            {scale:1,transform:'translateX(-104%)'}
+        )
+    },[])
 
     return (
         <div className='min-h-[1000px] flex' ref={wrapper} id={styles.wrapper}>

@@ -5,16 +5,29 @@ import styles from './index.module.scss'
 import StyledButton from '../Common/StyledButton'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
-
+import ScrollTrigger from 'gsap/ScrollTrigger'
 export default function Care() {
+    const wrapper = useRef(null)
     const boxRef = useRef(null)
+    gsap.registerPlugin(ScrollTrigger)
 
     useEffect(() => {
-        gsap.fromTo(boxRef.current,{scale:0,transform:'translateX(15%)'},{scale:1,transform:'translateX(15%)'})
+        const tl = gsap.timeline({
+            scrollTrigger: {
+                trigger:wrapper.current,
+                start:"-=500",
+                end: "+=900",
+                scrub:true
+            }
+        })
+        tl.fromTo(boxRef.current,
+            {scale:0,transform:'translateX(15%)'},
+            {scale:1,transform:'translateX(15%)'}
+        )
     },[])
 
     return (
-        <div className='min-h-[960px] flex bg-[#F8F8F8] overflow-hidden' id={styles.wrapper}>
+        <div className='min-h-[960px] flex bg-[#F8F8F8] overflow-hidden' ref={wrapper} id={styles.wrapper}>
             <div className='w-2/4 pt-60' id={styles.container_wrapper}>
                 <div id={styles.container}>
                     <h4 className='text-xl text-grayText font-bold font-secondary'>Light meter</h4>
