@@ -18,8 +18,8 @@ export default function Navbar() {
             </div>
             <p className='text-black font-secondary text-sm font-normal hidden' id={styles.menu}>Menu</p>
             <div className='flex items-center w-[288px]' id={styles.images_wrapper}>
-                <img alt="App Store" className='mr-6' src={AppStore}/>
-                <img alt="Google Play" src={GooglePlay}/>
+                <img alt="App Store" className='cursor-pointer mr-6' src={AppStore}/>
+                <img alt="Google Play" className="cursor-pointer" src={GooglePlay}/>
             </div>
         </div>
     )

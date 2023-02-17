@@ -2,7 +2,7 @@ import plant from '/plantastic/plant.svg'
 import AppStore from '/general/app_store.png'
 import GooglePlay from '/general/google_play.png'
 import styles from './index.module.scss'
-
+import {LazyLoadImage} from 'react-lazy-load-image-component'
 export default function Plantastic() {
     return (
         <div className="responsive_wrapper w-full pt-44">
@@ -19,7 +19,7 @@ export default function Plantastic() {
                     </div>
                 </div>
                 <div id={styles.plant_img_wrapper}>
-                    <img src={plant} id={styles.plant_img}/>
+                    <LazyLoadImage alt='plant' src={plant} id={styles.plant_img}/>
                 </div>
             </div>
         </div>
