@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Care from "./components/Care";
 import Footer from "./components/Footer";
 import GreenBar from "./components/GreenBar";
@@ -10,17 +11,19 @@ import Users from "./components/Users";
 
 function App() {
  return (
-    <>
-        <Navbar />
-        <Header />
-        <GreenBar />
-        <Identification />
-        <Care />
-        <Grow />
-        <Users />
-        <Plantastic />
-        <Footer /> 
-    </>
+    <Suspense fallback={null}>
+        <>
+            <Navbar />
+            <Header />
+            <GreenBar />
+            <Identification />
+            <Care />
+            <Grow />
+            <Users />
+            <Plantastic />
+            <Footer /> 
+        </>
+    </Suspense>
  )
 }
 
