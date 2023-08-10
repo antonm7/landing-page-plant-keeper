@@ -7,6 +7,7 @@ import phone from '/header/phone.png'
 import bottom from '/header/bottom.jpg'
 import styles from './index.module.scss'
 import { useRef, useLayoutEffect, useState } from 'react'
+
 import gsap from 'gsap'
 
 export default function Header() {
@@ -21,18 +22,19 @@ export default function Header() {
         setImagesLoaded(true);
     };
 
+    const tl = gsap.timeline()
+
     useLayoutEffect(() => {
-        gsap.fromTo(leftFlower.current,{
+        tl.fromTo(leftFlower.current,{
             x:'-165%',
             rotation:25
-
         },{
             x:'-174%',
             rotation:0,
             duration:0.8
-        })
+        },0)
 
-        gsap.fromTo(rightFlower.current,{
+        tl.fromTo(rightFlower.current,{
             x:'0%',
             rotation:-25
 
@@ -40,24 +42,24 @@ export default function Header() {
             x:'22%',
             rotation:0,
             duration:0.8
-        })
+        },0)
 
-        gsap.fromTo(tabsRef.current,{
+        tl.fromTo(tabsRef.current,{
            y:'20rem',
            translateX:'-114%',
         },{
             y:'17.6rem',
             translateX:'-114%',
             duration:0.8
-        })
-        gsap.fromTo(phoneRef.current,{
+        },0)
+        tl.fromTo(phoneRef.current,{
             y:'6rem',
             translateX:'-50%',
          },{
              y:'4rem',
              translateX:'-50%',
              duration:0.8
-         })
+         },0)
     }, []);
     
     return (

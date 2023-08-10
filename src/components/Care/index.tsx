@@ -6,6 +6,7 @@ import StyledButton from '../Common/StyledButton'
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+
 export default function Care() {
     const wrapper = useRef(null)
     const boxRef = useRef(null)

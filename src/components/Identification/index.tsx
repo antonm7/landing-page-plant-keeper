@@ -1,4 +1,4 @@
-import box from '/identification/box.svg'
+import box from '/identification/box.png'
 import phone from '/identification/phone.svg'
 import styles from './index.module.scss'
 import StyledButton from '../Common/StyledButton'
@@ -15,9 +15,9 @@ export default function Identification() {
         const tl = gsap.timeline({
             scrollTrigger: {
                 trigger:wrapper.current,
-                start:"-=500",
+                start:"-=400",
                 end: "+=900",
-                scrub:true
+                scrub:true,
             }
         })
         tl.fromTo(boxRef.current,
